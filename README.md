@@ -51,10 +51,15 @@ week-2-day-3-assignment/
 
 ## Screenshots
 
-Add screenshots here after testing the apps:
+### Character Counter
 
-```text
-screenshots/counter.png
-screenshots/shopping-list.png
-screenshots/calculator.png
+![Character Counter Screenshot](screenshots/counter-app.png)
+
+### Dynamic Shopping List
+
+![Shopping List Screenshot](screenshots/shopping-list-app.png)
+
+### Calculator
+
+![Calculator Screenshot](screenshots/calculator-app.png)
 ```
