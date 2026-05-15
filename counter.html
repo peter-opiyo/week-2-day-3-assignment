@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Counter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>DOM Practice Apps</h1>
+    <nav>
+      <a class="active" href="counter.html">Counter</a>
+      <a href="shopping-list.html">Shopping List</a>
+      <a href="calculator.html">Calculator</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="app-card counter-card">
+      <p class="eyebrow">Task 1</p>
+      <h2>Character Counter</h2>
+      <p class="intro">Type a short post and watch the character counter update in real time.</p>
+
+      <form id="postForm">
+        <label for="message">Write your message</label>
+        <textarea id="message" rows="8" placeholder="What's happening in Nairobi today?"></textarea>
+        <p id="charCounter" class="counter-text">0/280 characters</p>
+        <button id="submitBtn" type="submit">Submit Post</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="counter.js"></script>
+</body>
+</html>

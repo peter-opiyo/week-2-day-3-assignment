@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Shopping List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>DOM Practice Apps</h1>
+    <nav>
+      <a href="counter.html">Counter</a>
+      <a class="active" href="shopping-list.html">Shopping List</a>
+      <a href="calculator.html">Calculator</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="app-card shopping-card">
+      <p class="eyebrow">Task 2</p>
+      <h2>Dynamic Shopping List</h2>
+      <p id="remainingCount" class="remaining-count">0 items remaining</p>
+
+      <div class="shopping-form">
+        <div>
+          <label for="itemName">Item name</label>
+          <input id="itemName" type="text" placeholder="e.g. Tomatoes">
+        </div>
+        <div>
+          <label for="quantity">Quantity</label>
+          <input id="quantity" type="number" min="1" value="1">
+        </div>
+        <button id="addItemBtn" type="button">Add Item</button>
+      </div>
+
+      <p id="errorMessage" class="error-message"></p>
+      <ul id="shoppingList" class="shopping-list"></ul>
+    </section>
+  </main>
+
+  <script src="shopping-list.js"></script>
+</body>
+</html>

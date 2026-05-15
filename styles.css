@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.site-header {
+  background: #111827;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a.active {
+  background: #f97316;
+}
+
+.page-shell {
+  min-height: calc(100vh - 82px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 20px;
+}
+
+.app-card {
+  width: 100%;
+  max-width: 760px;
+  background: white;
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(17, 24, 39, 0.12);
+}
+
+.eyebrow {
+  color: #f97316;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+}
+
+.intro {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+textarea,
+input {
+  width: 100%;
+  border: 2px solid #d1d5db;
+  border-radius: 14px;
+  padding: 14px;
+  font: inherit;
+  outline: none;
+}
+
+textarea:focus,
+input:focus {
+  border-color: #2563eb;
+}
+
+textarea.safe {
+  border-color: #16a34a;
+}
+
+textarea.warning {
+  border-color: #f97316;
+}
+
+textarea.danger {
+  border-color: #dc2626;
+}
+
+.counter-text {
+  font-weight: 700;
+}
+
+.safe-text {
+  color: #16a34a;
+}
+
+.warning-text {
+  color: #f97316;
+}
+
+.danger-text,
+.error-message {
+  color: #dc2626;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font: inherit;
+  font-weight: 700;
+  background: #f97316;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #ea580c;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(249, 115, 22, 0.25);
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.form-message,
+.error-message {
+  min-height: 24px;
+  font-weight: 600;
+}
+
+.shopping-form {
+  display: grid;
+  grid-template-columns: 1fr 140px auto;
+  gap: 14px;
+  align-items: end;
+}
+
+.remaining-count {
+  display: inline-block;
+  background: #ecfdf5;
+  color: #047857;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.shopping-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: grid;
+  gap: 14px;
+}
+
+.shopping-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #f9fafb;
+}
+
+.item-details {
+  display: grid;
+  gap: 4px;
+}
+
+.item-details span {
+  color: #6b7280;
+}
+
+.item-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.bought {
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.bought-btn {
+  background: #16a34a;
+}
+
+.bought-btn:hover {
+  background: #15803d;
+}
+
+.delete-btn,
+.control-btn {
+  background: #dc2626;
+}
+
+.delete-btn:hover,
+.control-btn:hover {
+  background: #b91c1c;
+}
+
+.calculator-card {
+  max-width: 420px;
+}
+
+.calculator {
+  background: #111827;
+  padding: 20px;
+  border-radius: 22px;
+}
+
+.calculator-display {
+  min-height: 72px;
+  background: #f9fafb;
+  color: #111827;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 16px;
+  text-align: right;
+  font-size: 2rem;
+  font-weight: 700;
+  overflow-x: auto;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calc-btn {
+  min-height: 58px;
+  background: #374151;
+}
+
+.calc-btn:hover {
+  background: #4b5563;
+}
+
+.operator-btn {
+  background: #f97316;
+}
+
+.operator-btn:hover {
+  background: #ea580c;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .app-card {
+    padding: 24px;
+  }
+
+  .shopping-form {
+    grid-template-columns: 1fr;
+  }
+
+  .shopping-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .item-actions {
+    width: 100%;
+  }
+
+  .item-actions button {
+    flex: 1;
+  }
+}
